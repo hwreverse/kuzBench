@@ -1,0 +1,74 @@
+Threads: 12, block: 512 mb (mem: 12800 mb)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              12
+On-line CPU(s) list: 0-11
+Thread(s) per core:  2
+Core(s) per socket:  6
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               63
+Model name:          Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Stepping:            2
+CPU MHz:             3298.263
+CPU max MHz:         3600,0000
+CPU min MHz:         1200,0000
+BogoMIPS:            6596.52
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            15360K
+NUMA node0 CPU(s):   0-11
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb intel_ppin tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts
+==/proc/cpuinfo hardware==
+==========================
+Start crypt thread(s)...
+crypt thread #5 ended, time = 42648 ms (42.648 s), speed = 12.0053 mb/s (size: 512 mb)
+crypt thread #1 ended, time = 42651 ms (42.651 s), speed = 12.0044 mb/s (size: 512 mb)
+crypt thread #6 ended, time = 42651 ms (42.651 s), speed = 12.0044 mb/s (size: 512 mb)
+crypt thread #2 ended, time = 42651 ms (42.651 s), speed = 12.0044 mb/s (size: 512 mb)
+crypt thread #9 ended, time = 42649 ms (42.649 s), speed = 12.005 mb/s (size: 512 mb)
+crypt thread #11 ended, time = 42666 ms (42.666 s), speed = 12.0002 mb/s (size: 512 mb)
+crypt thread #3 ended, time = 42667 ms (42.667 s), speed = 11.9999 mb/s (size: 512 mb)
+crypt thread #7 ended, time = 42670 ms (42.67 s), speed = 11.9991 mb/s (size: 512 mb)
+crypt thread #8 ended, time = 42675 ms (42.675 s), speed = 11.9977 mb/s (size: 512 mb)
+crypt thread #0 ended, time = 42677 ms (42.677 s), speed = 11.9971 mb/s (size: 512 mb)
+crypt thread #10 ended, time = 42679 ms (42.679 s), speed = 11.9965 mb/s (size: 512 mb)
+crypt thread #4 ended, time = 42710 ms (42.71 s), speed = 11.9878 mb/s (size: 512 mb)
+Start DEcrypt thread(s)...
+decrypt thread #9 ended, time = 44434 ms (44.434 s), speed = 11.5227 mb/s (size: 512 mb)
+decrypt thread #0 ended, time = 44436 ms (44.436 s), speed = 11.5222 mb/s (size: 512 mb)
+decrypt thread #8 ended, time = 44454 ms (44.454 s), speed = 11.5175 mb/s (size: 512 mb)
+decrypt thread #1 ended, time = 44505 ms (44.505 s), speed = 11.5043 mb/s (size: 512 mb)
+decrypt thread #2 ended, time = 44515 ms (44.515 s), speed = 11.5017 mb/s (size: 512 mb)
+decrypt thread #10 ended, time = 44515 ms (44.515 s), speed = 11.5017 mb/s (size: 512 mb)
+decrypt thread #7 ended, time = 44520 ms (44.52 s), speed = 11.5004 mb/s (size: 512 mb)
+decrypt thread #5 ended, time = 44520 ms (44.52 s), speed = 11.5004 mb/s (size: 512 mb)
+decrypt thread #11 ended, time = 44523 ms (44.523 s), speed = 11.4997 mb/s (size: 512 mb)
+decrypt thread #4 ended, time = 44532 ms (44.532 s), speed = 11.4973 mb/s (size: 512 mb)
+decrypt thread #6 ended, time = 44534 ms (44.534 s), speed = 11.4968 mb/s (size: 512 mb)
+decrypt thread #3 ended, time = 44543 ms (44.543 s), speed = 11.4945 mb/s (size: 512 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 6144 (512 mb x 12)
+	Mem alloc(plain(1) + 
+	 crypt(12) + decrypt(12)): 	 12800 mb
+	Total work time: 		 87.254000 s 
+	 Avg. crypt time:   	42666 ms (42.666000 s)
+	 Avg. decrypt time:   	44502 ms (44.502000 s)
+	 Avg. crypt speed:   	144.002250  mb/s
+	 Avg. decrypt speed:   	138.061211  mb/s
+
+Crypt result info: 
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+crypted data:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

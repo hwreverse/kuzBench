@@ -1,0 +1,111 @@
+
+Kuzbench v1.3 T129 GOST 34.12-2015 Benchmark
+============================================
+
+Threads: 28, block: 512 MB (Mem: 29184 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                28
+On-line CPU(s) list:   0-27
+Thread(s) per core:    1
+Core(s) per socket:    14
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Xeon(R) CPU E5-2697 v3 @ 2.60GHz
+Stepping:              2
+CPU MHz:               3099.877
+CPU max MHz:           3600.0000
+CPU min MHz:           1200.0000
+BogoMIPS:              5187.46
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              35840K
+NUMA node0 CPU(s):     0-13
+NUMA node1 CPU(s):     14-27
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm epb invpcid_single kaiser tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts
+==/proc/cpuinfo hardware==
+==========================
+Start Encryption thread(s)...
+crypt thread #3 ended, time = 47304 ms (47.304 s), speed = 10.8236 mb/s (size: 512 mb)
+crypt thread #14 ended, time = 47305 ms (47.305 s), speed = 10.8234 mb/s (size: 512 mb)
+crypt thread #10 ended, time = 47307 ms (47.307 s), speed = 10.8229 mb/s (size: 512 mb)
+crypt thread #12 ended, time = 47307 ms (47.307 s), speed = 10.8229 mb/s (size: 512 mb)
+crypt thread #18 ended, time = 47324 ms (47.324 s), speed = 10.819 mb/s (size: 512 mb)
+crypt thread #27 ended, time = 47308 ms (47.308 s), speed = 10.8227 mb/s (size: 512 mb)
+crypt thread #5 ended, time = 47308 ms (47.308 s), speed = 10.8227 mb/s (size: 512 mb)
+crypt thread #1 ended, time = 47318 ms (47.318 s), speed = 10.8204 mb/s (size: 512 mb)
+crypt thread #20 ended, time = 47310 ms (47.31 s), speed = 10.8222 mb/s (size: 512 mb)
+crypt thread #22 ended, time = 47312 ms (47.312 s), speed = 10.8218 mb/s (size: 512 mb)
+crypt thread #25 ended, time = 47313 ms (47.313 s), speed = 10.8216 mb/s (size: 512 mb)
+crypt thread #8 ended, time = 47315 ms (47.315 s), speed = 10.8211 mb/s (size: 512 mb)
+crypt thread #16 ended, time = 47322 ms (47.322 s), speed = 10.8195 mb/s (size: 512 mb)
+crypt thread #9 ended, time = 49374 ms (49.374 s), speed = 10.3698 mb/s (size: 512 mb)
+crypt thread #26 ended, time = 49555 ms (49.555 s), speed = 10.332 mb/s (size: 512 mb)
+crypt thread #7 ended, time = 49629 ms (49.629 s), speed = 10.3165 mb/s (size: 512 mb)
+crypt thread #0 ended, time = 49635 ms (49.635 s), speed = 10.3153 mb/s (size: 512 mb)
+crypt thread #15 ended, time = 49634 ms (49.634 s), speed = 10.3155 mb/s (size: 512 mb)
+crypt thread #6 ended, time = 49699 ms (49.699 s), speed = 10.302 mb/s (size: 512 mb)
+crypt thread #4 ended, time = 49686 ms (49.686 s), speed = 10.3047 mb/s (size: 512 mb)
+crypt thread #21 ended, time = 49910 ms (49.91 s), speed = 10.2585 mb/s (size: 512 mb)
+crypt thread #24 ended, time = 49915 ms (49.915 s), speed = 10.2574 mb/s (size: 512 mb)
+crypt thread #2 ended, time = 49966 ms (49.966 s), speed = 10.247 mb/s (size: 512 mb)
+crypt thread #11 ended, time = 50062 ms (50.062 s), speed = 10.2273 mb/s (size: 512 mb)
+crypt thread #23 ended, time = 50158 ms (50.158 s), speed = 10.2077 mb/s (size: 512 mb)
+crypt thread #19 ended, time = 50265 ms (50.265 s), speed = 10.186 mb/s (size: 512 mb)
+crypt thread #17 ended, time = 50579 ms (50.579 s), speed = 10.1228 mb/s (size: 512 mb)
+crypt thread #13 ended, time = 50596 ms (50.596 s), speed = 10.1194 mb/s (size: 512 mb)
+Start Decryption thread(s)...
+decrypt thread #11 ended, time = 49404 ms (49.404 s), speed = 10.3635 mb/s (size: 512 mb)
+decrypt thread #6 ended, time = 49468 ms (49.468 s), speed = 10.3501 mb/s (size: 512 mb)
+decrypt thread #13 ended, time = 49532 ms (49.532 s), speed = 10.3368 mb/s (size: 512 mb)
+decrypt thread #9 ended, time = 49541 ms (49.541 s), speed = 10.3349 mb/s (size: 512 mb)
+decrypt thread #2 ended, time = 49550 ms (49.55 s), speed = 10.333 mb/s (size: 512 mb)
+decrypt thread #4 ended, time = 49552 ms (49.552 s), speed = 10.3326 mb/s (size: 512 mb)
+decrypt thread #21 ended, time = 49542 ms (49.542 s), speed = 10.3347 mb/s (size: 512 mb)
+decrypt thread #17 ended, time = 49720 ms (49.72 s), speed = 10.2977 mb/s (size: 512 mb)
+decrypt thread #15 ended, time = 49752 ms (49.752 s), speed = 10.291 mb/s (size: 512 mb)
+decrypt thread #26 ended, time = 49781 ms (49.781 s), speed = 10.285 mb/s (size: 512 mb)
+decrypt thread #19 ended, time = 49779 ms (49.779 s), speed = 10.2855 mb/s (size: 512 mb)
+decrypt thread #23 ended, time = 49823 ms (49.823 s), speed = 10.2764 mb/s (size: 512 mb)
+decrypt thread #12 ended, time = 52087 ms (52.087 s), speed = 9.82971 mb/s (size: 512 mb)
+decrypt thread #5 ended, time = 52447 ms (52.447 s), speed = 9.76224 mb/s (size: 512 mb)
+decrypt thread #3 ended, time = 52783 ms (52.783 s), speed = 9.70009 mb/s (size: 512 mb)
+decrypt thread #24 ended, time = 52891 ms (52.891 s), speed = 9.68029 mb/s (size: 512 mb)
+decrypt thread #7 ended, time = 53232 ms (53.232 s), speed = 9.61827 mb/s (size: 512 mb)
+decrypt thread #0 ended, time = 53298 ms (53.298 s), speed = 9.60636 mb/s (size: 512 mb)
+decrypt thread #27 ended, time = 53718 ms (53.718 s), speed = 9.53126 mb/s (size: 512 mb)
+decrypt thread #22 ended, time = 53899 ms (53.899 s), speed = 9.49925 mb/s (size: 512 mb)
+decrypt thread #1 ended, time = 54046 ms (54.046 s), speed = 9.47341 mb/s (size: 512 mb)
+decrypt thread #14 ended, time = 54189 ms (54.189 s), speed = 9.44841 mb/s (size: 512 mb)
+decrypt thread #16 ended, time = 54211 ms (54.211 s), speed = 9.44458 mb/s (size: 512 mb)
+decrypt thread #25 ended, time = 54277 ms (54.277 s), speed = 9.43309 mb/s (size: 512 mb)
+decrypt thread #18 ended, time = 54455 ms (54.455 s), speed = 9.40226 mb/s (size: 512 mb)
+decrypt thread #20 ended, time = 54692 ms (54.692 s), speed = 9.36152 mb/s (size: 512 mb)
+decrypt thread #8 ended, time = 54773 ms (54.773 s), speed = 9.34767 mb/s (size: 512 mb)
+decrypt thread #10 ended, time = 54944 ms (54.944 s), speed = 9.31858 mb/s (size: 512 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 14336 (512 MB x 28)
+	Mem. alloc(plain(1) + 
+	 crypt(28) + decrypt(28)): 	 29184 MB
+	Total work time: 		 105.558000 s 
+	 Avg. Encryption time:   	48704 ms (48.704000 s)
+	 Avg. Decryption time:   	51978 ms (51.978000 s)
+	 Avg. Encryption speed:   	294.349540  MB/s
+	 Avg. Decryption speed:   	275.808996  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

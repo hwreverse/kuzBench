@@ -1,0 +1,73 @@
+
+Kuzbench v1.3 T129 GOST 34.12-2015 Benchmark
+============================================
+
+Threads: 12, block: 512 MB (Mem: 12800 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                12
+On-line CPU(s) list:   0-11
+Thread(s) per core:    2
+Core(s) per socket:    6
+Socket(s):             1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Stepping:              2
+CPU MHz:               3301.000
+CPU max MHz:           3301.0000
+BogoMIPS:              6602.00
+Virtualization:        VT-x
+Hypervisor vendor:     Windows Subsystem for Linux
+Virtualization type:   container
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand
+==/proc/cpuinfo hardware==
+==========================
+Start Encryption thread(s)...
+crypt thread #10 ended, time = 39209 ms (39.209 s), speed = 13.0582 mb/s (size: 512 mb)
+crypt thread #3 ended, time = 39300 ms (39.3 s), speed = 13.028 mb/s (size: 512 mb)
+crypt thread #9 ended, time = 39325 ms (39.325 s), speed = 13.0197 mb/s (size: 512 mb)
+crypt thread #4 ended, time = 39338 ms (39.338 s), speed = 13.0154 mb/s (size: 512 mb)
+crypt thread #5 ended, time = 39553 ms (39.553 s), speed = 12.9447 mb/s (size: 512 mb)
+crypt thread #6 ended, time = 39627 ms (39.627 s), speed = 12.9205 mb/s (size: 512 mb)
+crypt thread #0 ended, time = 39634 ms (39.634 s), speed = 12.9182 mb/s (size: 512 mb)
+crypt thread #11 ended, time = 39667 ms (39.667 s), speed = 12.9075 mb/s (size: 512 mb)
+crypt thread #2 ended, time = 39884 ms (39.884 s), speed = 12.8372 mb/s (size: 512 mb)
+crypt thread #8 ended, time = 39951 ms (39.951 s), speed = 12.8157 mb/s (size: 512 mb)
+crypt thread #1 ended, time = 39968 ms (39.968 s), speed = 12.8102 mb/s (size: 512 mb)
+crypt thread #7 ended, time = 39990 ms (39.99 s), speed = 12.8032 mb/s (size: 512 mb)
+Start Decryption thread(s)...
+decrypt thread #3 ended, time = 41048 ms (41.048 s), speed = 12.4732 mb/s (size: 512 mb)
+decrypt thread #4 ended, time = 41152 ms (41.152 s), speed = 12.4417 mb/s (size: 512 mb)
+decrypt thread #6 ended, time = 41627 ms (41.627 s), speed = 12.2997 mb/s (size: 512 mb)
+decrypt thread #0 ended, time = 41717 ms (41.717 s), speed = 12.2732 mb/s (size: 512 mb)
+decrypt thread #10 ended, time = 41744 ms (41.744 s), speed = 12.2652 mb/s (size: 512 mb)
+decrypt thread #5 ended, time = 41826 ms (41.826 s), speed = 12.2412 mb/s (size: 512 mb)
+decrypt thread #11 ended, time = 41850 ms (41.85 s), speed = 12.2342 mb/s (size: 512 mb)
+decrypt thread #9 ended, time = 42080 ms (42.08 s), speed = 12.1673 mb/s (size: 512 mb)
+decrypt thread #2 ended, time = 42093 ms (42.093 s), speed = 12.1635 mb/s (size: 512 mb)
+decrypt thread #7 ended, time = 42119 ms (42.119 s), speed = 12.156 mb/s (size: 512 mb)
+decrypt thread #1 ended, time = 42341 ms (42.341 s), speed = 12.0923 mb/s (size: 512 mb)
+decrypt thread #8 ended, time = 42356 ms (42.356 s), speed = 12.088 mb/s (size: 512 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 6144 (512 MB x 12)
+	Mem. alloc(plain(1) + 
+	 crypt(12) + decrypt(12)): 	 12800 MB
+	Total work time: 		 82.350000 s 
+	 Avg. Encryption time:   	39620 ms (39.620000 s)
+	 Avg. Decryption time:   	41829 ms (41.829000 s)
+	 Avg. Encryption speed:   	155.073195  MB/s
+	 Avg. Decryption speed:   	146.883741  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

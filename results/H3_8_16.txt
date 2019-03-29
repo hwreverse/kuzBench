@@ -1,0 +1,52 @@
+Threads: 8, block: 16 mb (mem: 272 mb)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          armv7l
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    4
+Socket(s):             1
+Model name:            ARMv7 Processor rev 5 (v7l)
+CPU max MHz:           1008.0000
+CPU min MHz:           120.0000
+==/proc/cpuinfo hardware==
+Hardware	: sun8i
+==========================
+Start crypt thread(s)...
+crypt thread #7 ended, time = 21850 ms (21.85 s), speed = 0.732265 mb/s (size: 16 mb)
+crypt thread #4 ended, time = 22120 ms (22.12 s), speed = 0.723327 mb/s (size: 16 mb)
+crypt thread #3 ended, time = 22159 ms (22.159 s), speed = 0.722054 mb/s (size: 16 mb)
+crypt thread #0 ended, time = 22177 ms (22.177 s), speed = 0.721468 mb/s (size: 16 mb)
+crypt thread #6 ended, time = 22170 ms (22.17 s), speed = 0.721696 mb/s (size: 16 mb)
+crypt thread #2 ended, time = 22184 ms (22.184 s), speed = 0.721241 mb/s (size: 16 mb)
+crypt thread #1 ended, time = 22210 ms (22.21 s), speed = 0.720396 mb/s (size: 16 mb)
+crypt thread #5 ended, time = 22372 ms (22.372 s), speed = 0.71518 mb/s (size: 16 mb)
+Start DEcrypt thread(s)...
+decrypt thread #2 ended, time = 22018 ms (22.018 s), speed = 0.726678 mb/s (size: 16 mb)
+decrypt thread #4 ended, time = 22129 ms (22.129 s), speed = 0.723033 mb/s (size: 16 mb)
+decrypt thread #0 ended, time = 22156 ms (22.156 s), speed = 0.722152 mb/s (size: 16 mb)
+decrypt thread #7 ended, time = 22222 ms (22.222 s), speed = 0.720007 mb/s (size: 16 mb)
+decrypt thread #6 ended, time = 22248 ms (22.248 s), speed = 0.719166 mb/s (size: 16 mb)
+decrypt thread #5 ended, time = 22266 ms (22.266 s), speed = 0.718584 mb/s (size: 16 mb)
+decrypt thread #3 ended, time = 22340 ms (22.34 s), speed = 0.716204 mb/s (size: 16 mb)
+decrypt thread #1 ended, time = 22423 ms (22.423 s), speed = 0.713553 mb/s (size: 16 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 128 (16 mb x 8)
+	Mem alloc(plain(1) + 
+	 crypt(8) + decrypt(8)): 	 272 mb
+	Total work time: 		 44.822000 s 
+	 Avg. crypt time:   	22155 ms (22.155000 s)
+	 Avg. decrypt time:   	22225 ms (22.225000 s)
+	 Avg. crypt speed:   	5.777477  mb/s
+	 Avg. decrypt speed:   	5.759280  mb/s
+
+Crypt result info: 
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+crypted data:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

@@ -1,0 +1,91 @@
+./kuznec_bench --threads 4 --blockSize 32 --loops 5 --alg 1 --verbose
+Threads: 4, block: 32 mb (mem: 288 mb)
+Loops: 5, algorithm: 1(nettle)
+=======   lscpu  =========
+Architecture:          aarch64
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    1
+Socket(s):             4
+CPU max MHz:           1536.0000
+CPU min MHz:           100.0000
+Hypervisor vendor:     (null)
+Virtualization type:   full
+==/proc/cpuinfo hardware==
+Hardware        : ODROID-C2
+==========================
+Cycle #1
+Start crypt thread(s)...
+crypt thread #2 ended, time = 9637 ms (9.637 s), speed = 3.32054 mb/s (size: 32 mb)
+crypt thread #3 ended, time = 9637 ms (9.637 s), speed = 3.32054 mb/s (size: 32 mb)
+crypt thread #1 ended, time = 9644 ms (9.644 s), speed = 3.31813 mb/s (size: 32 mb)
+crypt thread #0 ended, time = 9970 ms (9.97 s), speed = 3.20963 mb/s (size: 32 mb)
+Start DEcrypt thread(s)...
+decrypt thread #0 ended, time = 9831 ms (9.831 s), speed = 3.25501 mb/s (size: 32 mb)
+decrypt thread #1 ended, time = 9838 ms (9.838 s), speed = 3.25269 mb/s (size: 32 mb)
+decrypt thread #3 ended, time = 9907 ms (9.907 s), speed = 3.23004 mb/s (size: 32 mb)
+decrypt thread #2 ended, time = 10284 ms (10.284 s), speed = 3.11163 mb/s (size: 32 mb)
+Cycle #2
+Start crypt thread(s)...
+crypt thread #2 ended, time = 9654 ms (9.654 s), speed = 3.31469 mb/s (size: 32 mb)
+crypt thread #3 ended, time = 9689 ms (9.689 s), speed = 3.30271 mb/s (size: 32 mb)
+crypt thread #0 ended, time = 9744 ms (9.744 s), speed = 3.28407 mb/s (size: 32 mb)
+crypt thread #1 ended, time = 10003 ms (10.003 s), speed = 3.19904 mb/s (size: 32 mb)
+Start DEcrypt thread(s)...
+decrypt thread #2 ended, time = 9844 ms (9.844 s), speed = 3.25071 mb/s (size: 32 mb)
+decrypt thread #0 ended, time = 9855 ms (9.855 s), speed = 3.24708 mb/s (size: 32 mb)
+decrypt thread #3 ended, time = 9862 ms (9.862 s), speed = 3.24478 mb/s (size: 32 mb)
+decrypt thread #1 ended, time = 10174 ms (10.174 s), speed = 3.14527 mb/s (size: 32 mb)
+Cycle #3
+Start crypt thread(s)...
+crypt thread #1 ended, time = 9653 ms (9.653 s), speed = 3.31503 mb/s (size: 32 mb)
+crypt thread #3 ended, time = 9659 ms (9.659 s), speed = 3.31297 mb/s (size: 32 mb)
+crypt thread #2 ended, time = 9737 ms (9.737 s), speed = 3.28643 mb/s (size: 32 mb)
+crypt thread #0 ended, time = 9990 ms (9.99 s), speed = 3.2032 mb/s (size: 32 mb)
+Start DEcrypt thread(s)...
+decrypt thread #3 ended, time = 9855 ms (9.855 s), speed = 3.24708 mb/s (size: 32 mb)
+decrypt thread #1 ended, time = 9866 ms (9.866 s), speed = 3.24346 mb/s (size: 32 mb)
+decrypt thread #2 ended, time = 9864 ms (9.864 s), speed = 3.24412 mb/s (size: 32 mb)
+decrypt thread #0 ended, time = 10170 ms (10.17 s), speed = 3.14651 mb/s (size: 32 mb)
+Cycle #4
+Start crypt thread(s)...
+crypt thread #1 ended, time = 9627 ms (9.627 s), speed = 3.32398 mb/s (size: 32 mb)
+crypt thread #3 ended, time = 9627 ms (9.627 s), speed = 3.32398 mb/s (size: 32 mb)
+crypt thread #2 ended, time = 9627 ms (9.627 s), speed = 3.32398 mb/s (size: 32 mb)
+crypt thread #0 ended, time = 9954 ms (9.954 s), speed = 3.21479 mb/s (size: 32 mb)
+Start DEcrypt thread(s)...
+decrypt thread #2 ended, time = 9830 ms (9.83 s), speed = 3.25534 mb/s (size: 32 mb)
+decrypt thread #3 ended, time = 9852 ms (9.852 s), speed = 3.24807 mb/s (size: 32 mb)
+decrypt thread #1 ended, time = 9894 ms (9.894 s), speed = 3.23428 mb/s (size: 32 mb)
+decrypt thread #0 ended, time = 10162 ms (10.162 s), speed = 3.14899 mb/s (size: 32 mb)
+Cycle #5
+Start crypt thread(s)...
+crypt thread #1 ended, time = 9628 ms (9.628 s), speed = 3.32364 mb/s (size: 32 mb)
+crypt thread #3 ended, time = 9628 ms (9.628 s), speed = 3.32364 mb/s (size: 32 mb)
+crypt thread #2 ended, time = 9638 ms (9.638 s), speed = 3.32019 mb/s (size: 32 mb)
+crypt thread #0 ended, time = 9961 ms (9.961 s), speed = 3.21253 mb/s (size: 32 mb)
+Start DEcrypt thread(s)...
+decrypt thread #3 ended, time = 9856 ms (9.856 s), speed = 3.24675 mb/s (size: 32 mb)
+decrypt thread #1 ended, time = 9859 ms (9.859 s), speed = 3.24577 mb/s (size: 32 mb)
+decrypt thread #2 ended, time = 9862 ms (9.862 s), speed = 3.24478 mb/s (size: 32 mb)
+decrypt thread #0 ended, time = 10177 ms (10.177 s), speed = 3.14435 mb/s (size: 32 mb)
+Summary (for all threads):
+        Data size (block x threads):     128 (32 mb x 4)
+        Mem alloc(plain(1) +
+         crypt(4) + decrypt(4)):         288 mb
+        Total work time:                 100.854000 s
+         Avg. crypt time:       9735 ms (9.735000 s)
+         Avg. decrypt time:     9942 ms (9.942000 s)
+         Avg. crypt speed:      13.148433  mb/s
+         Avg. decrypt speed:    12.874673  mb/s
+
+Crypt result info:
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06
+crypted data:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06

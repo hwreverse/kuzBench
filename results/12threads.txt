@@ -1,0 +1,78 @@
+
+Kuzbench v1.1 T65 GOST 34.12-2015 Benchmark
+===========================================
+
+Threads: 12, block: 64 MB (Mem: 1600 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              12
+On-line CPU(s) list: 0-11
+Thread(s) per core:  2
+Core(s) per socket:  6
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               63
+Model name:          Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Stepping:            2
+CPU MHz:             3300.299
+CPU max MHz:         4000.0000
+CPU min MHz:         1200.0000
+BogoMIPS:            6600.59
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            15360K
+NUMA node0 CPU(s):   0-11
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb intel_ppin tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts
+==/proc/cpuinfo hardware==
+==========================
+Start Encryption thread(s)...
+crypt thread #11 ended, time = 5518 ms (5.518 s), speed = 11.5984 mb/s (size: 64 mb)
+crypt thread #8 ended, time = 5518 ms (5.518 s), speed = 11.5984 mb/s (size: 64 mb)
+crypt thread #9 ended, time = 5544 ms (5.544 s), speed = 11.544 mb/s (size: 64 mb)
+crypt thread #0 ended, time = 5547 ms (5.547 s), speed = 11.5378 mb/s (size: 64 mb)
+crypt thread #2 ended, time = 5551 ms (5.551 s), speed = 11.5295 mb/s (size: 64 mb)
+crypt thread #4 ended, time = 5551 ms (5.551 s), speed = 11.5295 mb/s (size: 64 mb)
+crypt thread #5 ended, time = 5551 ms (5.551 s), speed = 11.5295 mb/s (size: 64 mb)
+crypt thread #3 ended, time = 5552 ms (5.552 s), speed = 11.5274 mb/s (size: 64 mb)
+crypt thread #10 ended, time = 5552 ms (5.552 s), speed = 11.5274 mb/s (size: 64 mb)
+crypt thread #6 ended, time = 5552 ms (5.552 s), speed = 11.5274 mb/s (size: 64 mb)
+crypt thread #1 ended, time = 5555 ms (5.555 s), speed = 11.5212 mb/s (size: 64 mb)
+crypt thread #7 ended, time = 5562 ms (5.562 s), speed = 11.5067 mb/s (size: 64 mb)
+Start Decryption thread(s)...
+decrypt thread #5 ended, time = 5680 ms (5.68 s), speed = 11.2676 mb/s (size: 64 mb)
+decrypt thread #1 ended, time = 5681 ms (5.681 s), speed = 11.2656 mb/s (size: 64 mb)
+decrypt thread #8 ended, time = 5699 ms (5.699 s), speed = 11.23 mb/s (size: 64 mb)
+decrypt thread #0 ended, time = 5700 ms (5.7 s), speed = 11.2281 mb/s (size: 64 mb)
+decrypt thread #7 ended, time = 5705 ms (5.705 s), speed = 11.2182 mb/s (size: 64 mb)
+decrypt thread #11 ended, time = 5698 ms (5.698 s), speed = 11.232 mb/s (size: 64 mb)
+decrypt thread #6 ended, time = 5709 ms (5.709 s), speed = 11.2104 mb/s (size: 64 mb)
+decrypt thread #3 ended, time = 5709 ms (5.709 s), speed = 11.2104 mb/s (size: 64 mb)
+decrypt thread #10 ended, time = 5709 ms (5.709 s), speed = 11.2104 mb/s (size: 64 mb)
+decrypt thread #2 ended, time = 5709 ms (5.709 s), speed = 11.2104 mb/s (size: 64 mb)
+decrypt thread #4 ended, time = 5711 ms (5.711 s), speed = 11.2064 mb/s (size: 64 mb)
+decrypt thread #9 ended, time = 5711 ms (5.711 s), speed = 11.2064 mb/s (size: 64 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 768 (64 MB x 12)
+	Mem. alloc(plain(1) + 
+	 crypt(12) + decrypt(12)): 	 1600 MB
+	Total work time: 		 11.274000 s 
+	 Avg. Encryption time:   	5546 ms (5.546000 s)
+	 Avg. Decryption time:   	5701 ms (5.701000 s)
+	 Avg. Encryption speed:   	138.478182  MB/s
+	 Avg. Decryption speed:   	134.713208  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

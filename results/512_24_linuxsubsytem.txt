@@ -1,0 +1,97 @@
+
+Kuzbench v1.3 T129 GOST 34.12-2015 Benchmark
+============================================
+
+Threads: 24, block: 512 MB (Mem: 25088 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                12
+On-line CPU(s) list:   0-11
+Thread(s) per core:    2
+Core(s) per socket:    6
+Socket(s):             1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Stepping:              2
+CPU MHz:               3301.000
+CPU max MHz:           3301.0000
+BogoMIPS:              6602.00
+Virtualization:        VT-x
+Hypervisor vendor:     Windows Subsystem for Linux
+Virtualization type:   container
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand
+==/proc/cpuinfo hardware==
+==========================
+Start Encryption thread(s)...
+crypt thread #7 ended, time = 72584 ms (72.584 s), speed = 7.0539 mb/s (size: 512 mb)
+crypt thread #13 ended, time = 72602 ms (72.602 s), speed = 7.05215 mb/s (size: 512 mb)
+crypt thread #19 ended, time = 72674 ms (72.674 s), speed = 7.04516 mb/s (size: 512 mb)
+crypt thread #12 ended, time = 72750 ms (72.75 s), speed = 7.0378 mb/s (size: 512 mb)
+crypt thread #1 ended, time = 72793 ms (72.793 s), speed = 7.03364 mb/s (size: 512 mb)
+crypt thread #6 ended, time = 72807 ms (72.807 s), speed = 7.03229 mb/s (size: 512 mb)
+crypt thread #18 ended, time = 72806 ms (72.806 s), speed = 7.03239 mb/s (size: 512 mb)
+crypt thread #8 ended, time = 76546 ms (76.546 s), speed = 6.68879 mb/s (size: 512 mb)
+crypt thread #3 ended, time = 76643 ms (76.643 s), speed = 6.68032 mb/s (size: 512 mb)
+crypt thread #15 ended, time = 77314 ms (77.314 s), speed = 6.62234 mb/s (size: 512 mb)
+crypt thread #20 ended, time = 77454 ms (77.454 s), speed = 6.61037 mb/s (size: 512 mb)
+crypt thread #2 ended, time = 77526 ms (77.526 s), speed = 6.60424 mb/s (size: 512 mb)
+crypt thread #21 ended, time = 77473 ms (77.473 s), speed = 6.60875 mb/s (size: 512 mb)
+crypt thread #14 ended, time = 77544 ms (77.544 s), speed = 6.6027 mb/s (size: 512 mb)
+crypt thread #9 ended, time = 77719 ms (77.719 s), speed = 6.58784 mb/s (size: 512 mb)
+crypt thread #0 ended, time = 80152 ms (80.152 s), speed = 6.38786 mb/s (size: 512 mb)
+crypt thread #16 ended, time = 81441 ms (81.441 s), speed = 6.28676 mb/s (size: 512 mb)
+crypt thread #10 ended, time = 81511 ms (81.511 s), speed = 6.28136 mb/s (size: 512 mb)
+crypt thread #4 ended, time = 81581 ms (81.581 s), speed = 6.27597 mb/s (size: 512 mb)
+crypt thread #22 ended, time = 81527 ms (81.527 s), speed = 6.28013 mb/s (size: 512 mb)
+crypt thread #5 ended, time = 81597 ms (81.597 s), speed = 6.27474 mb/s (size: 512 mb)
+crypt thread #11 ended, time = 81473 ms (81.473 s), speed = 6.28429 mb/s (size: 512 mb)
+crypt thread #17 ended, time = 81628 ms (81.628 s), speed = 6.27236 mb/s (size: 512 mb)
+crypt thread #23 ended, time = 81710 ms (81.71 s), speed = 6.26606 mb/s (size: 512 mb)
+Start Decryption thread(s)...
+decrypt thread #8 ended, time = 84112 ms (84.112 s), speed = 6.08712 mb/s (size: 512 mb)
+decrypt thread #15 ended, time = 84180 ms (84.18 s), speed = 6.0822 mb/s (size: 512 mb)
+decrypt thread #20 ended, time = 84191 ms (84.191 s), speed = 6.08141 mb/s (size: 512 mb)
+decrypt thread #3 ended, time = 84260 ms (84.26 s), speed = 6.07643 mb/s (size: 512 mb)
+decrypt thread #21 ended, time = 84233 ms (84.233 s), speed = 6.07838 mb/s (size: 512 mb)
+decrypt thread #2 ended, time = 84298 ms (84.298 s), speed = 6.07369 mb/s (size: 512 mb)
+decrypt thread #14 ended, time = 84245 ms (84.245 s), speed = 6.07751 mb/s (size: 512 mb)
+decrypt thread #9 ended, time = 84426 ms (84.426 s), speed = 6.06448 mb/s (size: 512 mb)
+decrypt thread #16 ended, time = 84809 ms (84.809 s), speed = 6.0371 mb/s (size: 512 mb)
+decrypt thread #23 ended, time = 84844 ms (84.844 s), speed = 6.0346 mb/s (size: 512 mb)
+decrypt thread #4 ended, time = 84960 ms (84.96 s), speed = 6.02637 mb/s (size: 512 mb)
+decrypt thread #22 ended, time = 84942 ms (84.942 s), speed = 6.02764 mb/s (size: 512 mb)
+decrypt thread #17 ended, time = 84997 ms (84.997 s), speed = 6.02374 mb/s (size: 512 mb)
+decrypt thread #5 ended, time = 85035 ms (85.035 s), speed = 6.02105 mb/s (size: 512 mb)
+decrypt thread #11 ended, time = 85039 ms (85.039 s), speed = 6.02077 mb/s (size: 512 mb)
+decrypt thread #10 ended, time = 85356 ms (85.356 s), speed = 5.99841 mb/s (size: 512 mb)
+decrypt thread #19 ended, time = 85393 ms (85.393 s), speed = 5.99581 mb/s (size: 512 mb)
+decrypt thread #18 ended, time = 85488 ms (85.488 s), speed = 5.98914 mb/s (size: 512 mb)
+decrypt thread #13 ended, time = 85515 ms (85.515 s), speed = 5.98725 mb/s (size: 512 mb)
+decrypt thread #6 ended, time = 85552 ms (85.552 s), speed = 5.98466 mb/s (size: 512 mb)
+decrypt thread #12 ended, time = 85543 ms (85.543 s), speed = 5.98529 mb/s (size: 512 mb)
+decrypt thread #0 ended, time = 85607 ms (85.607 s), speed = 5.98082 mb/s (size: 512 mb)
+decrypt thread #1 ended, time = 85703 ms (85.703 s), speed = 5.97412 mb/s (size: 512 mb)
+decrypt thread #7 ended, time = 85905 ms (85.905 s), speed = 5.96007 mb/s (size: 512 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 12288 (512 MB x 24)
+	Mem. alloc(plain(1) + 
+	 crypt(24) + decrypt(24)): 	 25088 MB
+	Total work time: 		 167.683000 s 
+	 Avg. Encryption time:   	77493 ms (77.493000 s)
+	 Avg. Decryption time:   	84943 ms (84.943000 s)
+	 Avg. Encryption speed:   	158.569161  MB/s
+	 Avg. Decryption speed:   	144.661714  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

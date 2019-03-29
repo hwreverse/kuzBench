@@ -1,0 +1,77 @@
+./kuznec_bench --threads 4 --blockSize 8 --loops 3 --alg 1 --verbose
+Threads: 4, block: 8 mb (mem: 72 mb)
+Loops: 3, algorithm: 1(nettle)
+=======   lscpu  =========
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 55
+Stepping:              8
+CPU MHz:               1886.504
+BogoMIPS:              3660.80
+Virtualization:        VT-x
+L1d cache:             24K
+L1i cache:             32K
+L2 cache:              1024K
+NUMA node0 CPU(s):     0-3
+==/proc/cpuinfo hardware==
+==========================
+Cycle #1
+Start crypt thread(s)...
+crypt thread #3 ended, time = 1496 ms (1.496 s), speed = 5.34759 mb/s (size: 8 mb)
+crypt thread #1 ended, time = 1503 ms (1.503 s), speed = 5.32269 mb/s (size: 8 mb)
+crypt thread #0 ended, time = 1504 ms (1.504 s), speed = 5.31915 mb/s (size: 8 mb)
+crypt thread #2 ended, time = 1537 ms (1.537 s), speed = 5.20495 mb/s (size: 8 mb)
+Start DEcrypt thread(s)...
+decrypt thread #0 ended, time = 1426 ms (1.426 s), speed = 5.6101 mb/s (size: 8 mb)
+decrypt thread #3 ended, time = 1435 ms (1.435 s), speed = 5.57491 mb/s (size: 8 mb)
+decrypt thread #2 ended, time = 1431 ms (1.431 s), speed = 5.5905 mb/s (size: 8 mb)
+decrypt thread #1 ended, time = 1461 ms (1.461 s), speed = 5.4757 mb/s (size: 8 mb)
+Cycle #2
+Start crypt thread(s)...
+crypt thread #0 ended, time = 1497 ms (1.497 s), speed = 5.34402 mb/s (size: 8 mb)
+crypt thread #1 ended, time = 1512 ms (1.512 s), speed = 5.29101 mb/s (size: 8 mb)
+crypt thread #2 ended, time = 1524 ms (1.524 s), speed = 5.24934 mb/s (size: 8 mb)
+crypt thread #3 ended, time = 1528 ms (1.528 s), speed = 5.2356 mb/s (size: 8 mb)
+Start DEcrypt thread(s)...
+decrypt thread #3 ended, time = 1444 ms (1.444 s), speed = 5.54017 mb/s (size: 8 mb)
+decrypt thread #0 ended, time = 1449 ms (1.449 s), speed = 5.52105 mb/s (size: 8 mb)
+decrypt thread #1 ended, time = 1452 ms (1.452 s), speed = 5.50964 mb/s (size: 8 mb)
+decrypt thread #2 ended, time = 1451 ms (1.451 s), speed = 5.51344 mb/s (size: 8 mb)
+Cycle #3
+Start crypt thread(s)...
+crypt thread #3 ended, time = 1494 ms (1.494 s), speed = 5.35475 mb/s (size: 8 mb)
+crypt thread #0 ended, time = 1495 ms (1.495 s), speed = 5.35117 mb/s (size: 8 mb)
+crypt thread #2 ended, time = 1501 ms (1.501 s), speed = 5.32978 mb/s (size: 8 mb)
+crypt thread #1 ended, time = 1507 ms (1.507 s), speed = 5.30856 mb/s (size: 8 mb)
+Start DEcrypt thread(s)...
+decrypt thread #0 ended, time = 1430 ms (1.43 s), speed = 5.59441 mb/s (size: 8 mb)
+decrypt thread #3 ended, time = 1438 ms (1.438 s), speed = 5.56328 mb/s (size: 8 mb)
+decrypt thread #1 ended, time = 1433 ms (1.433 s), speed = 5.58269 mb/s (size: 8 mb)
+decrypt thread #2 ended, time = 1462 ms (1.462 s), speed = 5.47196 mb/s (size: 8 mb)
+Summary (for all threads):
+        Data size (block x threads):     32 (8 mb x 4)
+        Mem alloc(plain(1) +
+         crypt(4) + decrypt(4)):         72 mb
+        Total work time:                 8.957000 s
+         Avg. crypt time:       1508 ms (1.508000 s)
+         Avg. decrypt time:     1442 ms (1.442000 s)
+         Avg. crypt speed:      21.220159  mb/s
+         Avg. decrypt speed:    22.191401  mb/s
+
+Crypt result info:
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06
+crypted data:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06

@@ -1,0 +1,70 @@
+
+Kuzbench v1.1 T65 GOST 34.12-2015 Benchmark
+===========================================
+
+Threads: 8, block: 128 MB (Mem: 2176 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 94
+Model name:            Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+Stepping:              3
+CPU MHz:               800.048
+CPU max MHz:           4200.0000
+CPU min MHz:           800.0000
+BogoMIPS:              8016.00
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb invpcid_single intel_pt kaiser tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp
+==/proc/cpuinfo hardware==
+==========================
+Start Encryption thread(s)...
+crypt thread #0 ended, time = 8432 ms (8.432 s), speed = 15.1803 mb/s (size: 128 mb)
+crypt thread #1 ended, time = 8438 ms (8.438 s), speed = 15.1695 mb/s (size: 128 mb)
+crypt thread #5 ended, time = 8456 ms (8.456 s), speed = 15.1372 mb/s (size: 128 mb)
+crypt thread #2 ended, time = 8478 ms (8.478 s), speed = 15.0979 mb/s (size: 128 mb)
+crypt thread #4 ended, time = 8477 ms (8.477 s), speed = 15.0997 mb/s (size: 128 mb)
+crypt thread #6 ended, time = 8485 ms (8.485 s), speed = 15.0854 mb/s (size: 128 mb)
+crypt thread #7 ended, time = 8471 ms (8.471 s), speed = 15.1104 mb/s (size: 128 mb)
+crypt thread #3 ended, time = 8526 ms (8.526 s), speed = 15.0129 mb/s (size: 128 mb)
+Start Decryption thread(s)...
+decrypt thread #2 ended, time = 8694 ms (8.694 s), speed = 14.7228 mb/s (size: 128 mb)
+decrypt thread #5 ended, time = 8740 ms (8.74 s), speed = 14.6453 mb/s (size: 128 mb)
+decrypt thread #1 ended, time = 8764 ms (8.764 s), speed = 14.6052 mb/s (size: 128 mb)
+decrypt thread #7 ended, time = 8749 ms (8.749 s), speed = 14.6302 mb/s (size: 128 mb)
+decrypt thread #6 ended, time = 8795 ms (8.795 s), speed = 14.5537 mb/s (size: 128 mb)
+decrypt thread #0 ended, time = 8814 ms (8.814 s), speed = 14.5224 mb/s (size: 128 mb)
+decrypt thread #4 ended, time = 8816 ms (8.816 s), speed = 14.5191 mb/s (size: 128 mb)
+decrypt thread #3 ended, time = 8835 ms (8.835 s), speed = 14.4878 mb/s (size: 128 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 1024 (128 MB x 8)
+	Mem. alloc(plain(1) + 
+	 crypt(8) + decrypt(8)): 	 2176 MB
+	Total work time: 		 17.375000 s 
+	 Avg. Encryption time:   	8470 ms (8.470000 s)
+	 Avg. Decryption time:   	8775 ms (8.775000 s)
+	 Avg. Encryption speed:   	120.897285  MB/s
+	 Avg. Decryption speed:   	116.695157  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

@@ -1,0 +1,58 @@
+Threads: 4, block: 64 mb (mem: 576 mb)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  2
+Core(s) per socket:  2
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               61
+Model name:          Intel(R) Core(TM) M-5Y71 CPU @ 1.20GHz
+Stepping:            4
+CPU MHz:             1396.769
+CPU max MHz:         2900.0000
+CPU min MHz:         500.0000
+BogoMIPS:            2793.53
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            4096K
+NUMA node0 CPU(s):   0-3
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt dtherm ida arat pln pts
+==/proc/cpuinfo hardware==
+==========================
+Start crypt thread(s)...
+crypt thread #0 ended, time = 5712 ms (5.712 s), speed = 11.2045 mb/s (size: 64 mb)
+crypt thread #3 ended, time = 5712 ms (5.712 s), speed = 11.2045 mb/s (size: 64 mb)
+crypt thread #2 ended, time = 5714 ms (5.714 s), speed = 11.2006 mb/s (size: 64 mb)
+crypt thread #1 ended, time = 5739 ms (5.739 s), speed = 11.1518 mb/s (size: 64 mb)
+Start DEcrypt thread(s)...
+decrypt thread #0 ended, time = 9303 ms (9.303 s), speed = 6.8795 mb/s (size: 64 mb)
+decrypt thread #2 ended, time = 9321 ms (9.321 s), speed = 6.86622 mb/s (size: 64 mb)
+decrypt thread #1 ended, time = 9326 ms (9.326 s), speed = 6.86253 mb/s (size: 64 mb)
+decrypt thread #3 ended, time = 9329 ms (9.329 s), speed = 6.86033 mb/s (size: 64 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 256 (64 mb x 4)
+	Mem alloc(plain(1) + 
+	 crypt(4) + decrypt(4)): 	 576 mb
+	Total work time: 		 15.077000 s 
+	 Avg. crypt time:   	5719 ms (5.719000 s)
+	 Avg. decrypt time:   	9319 ms (9.319000 s)
+	 Avg. crypt speed:   	44.763070  mb/s
+	 Avg. decrypt speed:   	27.470759  mb/s
+
+Crypt result info: 
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+crypted data:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 

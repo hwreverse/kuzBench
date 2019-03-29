@@ -1,0 +1,49 @@
+./kuznec_bench --threads 4 --blockSize 1 --loops 1 --alg 2 --verbose
+Threads: 4, block: 1 mb (mem: 9 mb)
+Loops: 1, algorithm: 2(rpi3arm) 
+=======   lscpu  =========
+Architecture:          armv7l
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    4
+Socket(s):             1
+Model name:            ARMv7 Processor rev 4 (v7l)
+CPU max MHz:           1200,0000
+CPU min MHz:           600,0000
+Hypervisor vendor:     (null)
+Virtualization type:   full
+==/proc/cpuinfo hardware==
+Hardware	: BCM2709
+==========================
+Start crypt thread(s)...
+crypt thread #1 ended, time = 41423 ms (41.423 s), speed = 0.0241412 mb/s (size: 1 mb)
+crypt thread #2 ended, time = 41449 ms (41.449 s), speed = 0.024126 mb/s (size: 1 mb)
+crypt thread #0 ended, time = 41573 ms (41.573 s), speed = 0.0240541 mb/s (size: 1 mb)
+crypt thread #3 ended, time = 41717 ms (41.717 s), speed = 0.023971 mb/s (size: 1 mb)
+Start DEcrypt thread(s)...
+decrypt thread #3 ended, time = 41642 ms (41.642 s), speed = 0.0240142 mb/s (size: 1 mb)
+decrypt thread #1 ended, time = 41692 ms (41.692 s), speed = 0.0239854 mb/s (size: 1 mb)
+decrypt thread #0 ended, time = 41773 ms (41.773 s), speed = 0.0239389 mb/s (size: 1 mb)
+decrypt thread #2 ended, time = 41965 ms (41.965 s), speed = 0.0238294 mb/s (size: 1 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 4 (1 mb x 4)
+	Mem alloc(plain(1) + 
+	 crypt(4) + decrypt(4)): 	 9 mb
+	Total work time: 		 83.705000 s 
+	 Avg. crypt time:   	41540 ms (41.540000 s)
+	 Avg. decrypt time:   	41768 ms (41.768000 s)
+	 Avg. crypt speed:   	0.096293  mb/s
+	 Avg. decrypt speed:   	0.095767  mb/s
+
+Crypt result info: 
+First 30 symbols for:
+source data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+crypted data:
+82 17 f0 43 a9 ce f2 cd d6 90 4f a6 c2 c5 b2 6c 4a f2 0c b1 2a fb b1 41 93 01 c6 0e 04 05 
+decrypted data:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+
+Child exited with status 0

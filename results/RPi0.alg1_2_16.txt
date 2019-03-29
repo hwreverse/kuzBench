@@ -1,0 +1,47 @@
+
+Kuzbench v1.1 T65 GOST 34.12-2015 Benchmark
+===========================================
+
+Threads: 2, block: 16 MB (Mem: 80 MB)
+Loops: 1, algorithm: 1(nettle) 
+=======   lscpu  =========
+Architecture:          armv6l
+Byte Order:            Little Endian
+CPU(s):                1
+On-line CPU(s) list:   0
+Thread(s) per core:    1
+Core(s) per socket:    1
+Socket(s):             1
+Model:                 7
+Model name:            ARMv6-compatible processor rev 7 (v6l)
+CPU max MHz:           1000.0000
+CPU min MHz:           700.0000
+BogoMIPS:              997.08
+Flags:                 half thumb fastmult vfp edsp java tls
+==/proc/cpuinfo hardware==
+Hardware	: BCM2835
+==========================
+Start Encryption thread(s)...
+crypt thread #1 ended, time = 47613 ms (47.613 s), speed = 0.336043 mb/s (size: 16 mb)
+crypt thread #0 ended, time = 47630 ms (47.63 s), speed = 0.335923 mb/s (size: 16 mb)
+Start Decryption thread(s)...
+decrypt thread #1 ended, time = 50827 ms (50.827 s), speed = 0.314793 mb/s (size: 16 mb)
+decrypt thread #0 ended, time = 50909 ms (50.909 s), speed = 0.314286 mb/s (size: 16 mb)
+Summary (for all threads):
+	Data size (block x threads): 	 32 (16 MB x 2)
+	Mem. alloc(plain(1) + 
+	 crypt(2) + decrypt(2)): 	 80 MB
+	Total work time: 		 98.555000 s 
+	 Avg. Encryption time:   	47621 ms (47.621000 s)
+	 Avg. Decryption time:   	50868 ms (50.868000 s)
+	 Avg. Encryption speed:   	0.671972  MB/s
+	 Avg. Decryption speed:   	0.629079  MB/s
+
+Encryption result info: 
+First 30 symbols for:
+source vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
+encrypted vector:
+8e c8 45 72 90 98 8d f0 db 68 95 8e 90 2b ca ce 2e 7c 0b 60 d6 14 93 4e 24 5d c2 28 2e c7 
+decrypted vector:
+00 01 02 02 02 03 03 03 03 03 04 04 04 04 04 04 04 05 05 05 05 05 05 05 05 05 06 06 06 06 
