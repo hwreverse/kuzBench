@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p obj
+mkdir -p objf
 
 flags='-Ofast -flto -Wall'
 
